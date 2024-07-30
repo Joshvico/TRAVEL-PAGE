@@ -1,0 +1,62 @@
+body {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  /* This add space in btw elemtns, due to layout settings it brings them to the end right */
+  align-items: center;
+  padding: 15px 60px;
+  position: absolute;
+  /* this puts header withut background --------- 1*/
+  width: 100%;
+  /* this corrects the short display in the screen -----------------2*/
+  box-sizing: border-box;
+  /* this fixes the 100% nav bar getting out of the screen ---------------3 */
+}
+
+#page-logo a {
+  padding: 10px;
+  font-family: "Oleo Script", sans-serif;
+  color: rgb(245, 243, 160);
+  font-size: 50px;
+  text-decoration: none;
+  text-transform: uppercase;
+  /* New property to detemerni the case of letter */
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
+  /* same as box shadow (horizonatl, vertical, blur, color)  */
+}
+
+header ul {
+  display: flex;
+}
+
+header li {
+  margin: 12px;
+}
+
+header a {
+  color: rgb(255, 251, 0);
+  font-size: 20px;
+  padding: 12px;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0, 0.2);
+  border-radius: 6px;
+}
+
+header a:hover {
+  color: rgb(77, 77, 77);
+  background-color: rgb(255, 251, 0);
+}
+
+a {
+  text-decoration: none;
+}
