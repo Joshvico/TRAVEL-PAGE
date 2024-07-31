@@ -1,19 +1,13 @@
 #hero {
   height: 800px;
-  background-image: url("/images/places/ocean.jpg"); /* adding background with css */
-  background-position: center; /* center's image but style very zoom */
-  background-size: cover; /* adapts image to the size */
+  background-image: url("/images/places/ocean.jpg");
+  /* adding background with css */
+  background-position: center;
+  /* center's image but style very zoom */
+  background-size: cover;
+  /* adapts image to the size */
 }
-#hero-content{
-    width: 900px;
-    background-color: rgba(51, 47, 47, 0.8); /* last value controls opacity */
-    border-radius: 8px;
-    text-align: center;
-    padding: 50px 0;
-    margin: 0 auto; /* thhis center the div */
-    position: relative; /* This allow us to the moce the element with direction top bottom right left */
-    top: 200px; /* it applies as I put position relative */
-}
+
 #hero {
   height: 800px;
   background-image: url("/images/places/ocean.jpg");
@@ -29,6 +23,7 @@
 #hero-content {
   width: 900px;
   background-color: rgba(51, 47, 47, 0.8);
+  box-shadow: 2px 4px 8px rgb(68, 67, 67);
   /* last value controls opacity */
   border-radius: 8px;
   text-align: center;
@@ -46,7 +41,7 @@
   text-transform: uppercase;
   font-size: 50px;
   font-family: "railway", sans-serif;
-  margin: 0px;
+  margin: 0;
 
 }
 
@@ -60,9 +55,8 @@
 }
 
 #hero-content a {
+  text-decoration: none;
   color: black;
-  width: 50px;
-  height: 30px;
   background-color: yellow;
   border-radius: 5px;
   padding: 12px 24px;
@@ -73,4 +67,49 @@
 
 #hero-content a:hover {
   background-color: rgb(211, 208, 35);
+}
+
+#highlights {
+  padding: 24px; /* This solves a "marging colapsing problem" */
+}
+
+#highlights h2 {
+text-transform: uppercase;
+text-align: center;
+font-size: 40px;
+color: rgb(32, 29, 29);
+margin: 24px 0;
+}
+#destinations {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  justify-content: center; /* This fixed all problme with flex not taking the 100% width */
+}
+
+.destination p {
+  text-align: center;
+  font-size: 24px;
+  color: rgb(56, 56, 51);
+  margin: 20px 0;
+}
+
+.destination {
+  margin: 0 20px;
+
+}
+
+.destination img {
+  height: 200px;
+  width: 100%; /* This is a porblem as it not following the command !!!!!!!!!!!!!!! */
+  box-shadow: 2px 4px 8px rgb(68, 68, 67);
+  border-radius: 10px;
+  object-fit: cover;
+  /* important to mantain quality and aspect reatio */
+}
+
+.destination strong{
+  color: rgb(32, 174, 150);
 }
