@@ -70,23 +70,27 @@
 }
 
 #highlights {
-  padding: 24px; /* This solves a "marging colapsing problem" */
+  padding: 24px;
+  /* This solves a "marging colapsing problem" */
+  background: linear-gradient(0deg, rgb(227,255,253),rgb(202,243,240));
 }
 
 #highlights h2 {
-text-transform: uppercase;
-text-align: center;
-font-size: 40px;
-color: rgb(32, 29, 29);
-margin: 24px 0;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 40px;
+  color: rgb(32, 29, 29);
+  margin: 24px 0;
 }
+
 #destinations {
   display: flex;
   width: 90%;
   margin: auto;
   margin-bottom: 40px;
   text-transform: uppercase;
-  justify-content: center; /* This fixed all problme with flex not taking the 100% width */
+  justify-content: center;
+  /* This fixed all problme with flex not taking the 100% width */
 }
 
 .destination p {
@@ -103,13 +107,34 @@ margin: 24px 0;
 
 .destination img {
   height: 200px;
-  width: 100%; /* This is a porblem as it not following the command !!!!!!!!!!!!!!! */
+  width: 100%;
+  /* This is a porblem as it not following the command !!!!!!!!!!!!!!! */
   box-shadow: 2px 4px 8px rgb(68, 68, 67);
   border-radius: 10px;
   object-fit: cover;
   /* important to mantain quality and aspect reatio */
 }
 
-.destination strong{
+.destination strong {
   color: rgb(32, 174, 150);
+}
+
+footer {
+  margin: 0;
+  background: linear-gradient(0deg, rgb(6, 6, 6),rgb(50, 52, 52));
+padding: 10px;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+
+  
+  
+}
+.icon {
+height:50px;
+width:50px;
+padding: 0px 40px;
+
 }
